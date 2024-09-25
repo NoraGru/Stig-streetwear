@@ -1,0 +1,25 @@
+// förklaring av kodsnuttar och metoder.
+
+//  const addToCart = orderBtn
+//       .closest(".order-container")
+//       .querySelector(".add-to-cart");
+
+//       Här är hur det fungerar steg för steg:
+
+// orderBtn.closest(".order-container"): Denna del av koden söker uppåt i DOM-trädet från den aktuella orderBtn-knappen för att hitta den närmaste förälderelementet som har klassen .order-container. Detta säkerställer att du jobbar inom rätt "block" av HTML.
+
+// .querySelector(".add-to-cart"): När den har hittat rätt .order-container, letar den upp elementet med klassen .add-to-cart inom denna container. Eftersom du är inne i rätt "block" av HTML, garanterar detta att du får rätt "Add to Cart"-knapp.
+
+// ternär operation (en kortfattad if/else statment)
+
+// condition ? valueIfTrue : valueIfFalse
+
+// Att någonting är null innebär i praktiken att det inte ännu fått något värde
+
+// if (addToCart) är en method att kolla om någonting är truthy alterativt falsy dvs samma eller falska påståenden i sammanhanget.
+// detta statment kolla huruvuda korgen är tom eller inte. Och om addToCart är truty har den ett värde i form av sträng, tal objekt, eller array.
+// och då kommer följande block av kod köras.
+// falsy är ett en tom stäng null nan Etc och är korgen tom läggs ett meddelande till i konsolen som säger det.
+
+// if (!template) på samma sätt betyder denna om templaten är null, undefined NaN etc ska ett errormeddelande köras
+// return; används för att sluta köra kod, ex !template=null skulle koden sluta köras, vilket gör det lättare att ringa in vart i koden felet uppstått.
